@@ -4,6 +4,8 @@ import boto3
 
 
 def load_sensor_data(sensor_data, dynamodb=None):
+    '''Add sensor data to Sensor_data DB'''
+    
     if not dynamodb:
         dynamodb = boto3.resource('dynamodb', region_name='eu-west-2')
 
