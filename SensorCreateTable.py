@@ -2,6 +2,8 @@ import boto3
 
 
 def create_sensor_table(dynamodb=None):
+    '''Create AWS DynamoDB'''
+    
     if not dynamodb:
         dynamodb = boto3.resource('dynamodb', region_name='eu-west-2')
 
